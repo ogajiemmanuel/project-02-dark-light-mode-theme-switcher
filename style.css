@@ -1,0 +1,41 @@
+/* Style Dark / Light Mode Theme Switcher from scratch */
+:root {
+--bg: #f8fafc;
+--card: #ffffff;
+--text: #0f172a;
+}
+
+body.dark {
+--bg:  #0f172a;
+--card:  #1e293b;
+--text: #f8fafc;
+}
+
+body {
+background: var(--bg);
+color: var(--text);
+font-family: sans-serif;
+display: grid;
+place-items: center;
+height: 100vh;
+margin: 0;
+transition: 0.25s;
+}
+
+.card{
+background: var(--card);
+padding: 24px;
+border-radius: 16px;
+box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+text-align: center;
+}
+
+button {
+background: #6366f1;
+color: white;
+border: none;
+padding:  10px 18px;
+border-radius: 8px;
+cursor: pointer;
+font-weight: 600;
+}
